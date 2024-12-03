@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniStyle - современный магазин мебели</title>
+    <link rel="stylesheet" href="main-styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="sofa-logo.png" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">FurniStyle</a>
+            <nav class="nav">
+                <a href="about-page/about.html">О нас</a>
+                <a href="#products">Каталог</a>
+                <a href="#contact">Контакты</a>
+                <button class="btn-cart" onclick='location.href="cart/cart.html"'>
+					<p>Корзина</p>
+				</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ОБНОВИТЕ ПРОСТРАНСТВО ВАШЕГО ДОМА</h1>
+            <p>СОВРЕМЕННАЯ И СТИЛЬНАЯ МЕБЕЛЬ, КОТОРАЯ ПОДОЙДЁТ ИМЕННО ВАМ.</p>
+            <a href="#products" class="btn-catalogue">
+				Перейти в каталог
+			</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Популярные товары 🔥</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="main/chair.jpg" alt="Modern Chair">
+					<div class="product-info">
+						<h1>Стул дизайнерский (белый)</h1>
+						<p>1499 ₽</p>
+						<button class="btn-add-to-cart">В корзину</button>
+					</div>
+                </div>
+                <div class="product">
+                    <img src="main/sofa.jpg" alt="Stylish Sofa">
+					<div class="product-info">
+						<h1>Диван домашний (белый)</h1>
+						<p>6999 ₽</p>
+						<button class="btn-add-to-cart">В корзину</button>
+					</div>
+                </div>
+                <div class="product">
+                    <img src="main/table.webp" alt="Dining Table">
+					<div class="product-info">
+						<h1>Обеденный стол (орех)</h1>
+						<p>8999 ₽</p>
+						<button class="btn-add-to-cart">В корзину</button>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О FurniStyle</h2>
+            <p>Мы предлагаем вам коллецию уникальной современной мебели, которая совмещает стиль и комфорт. Элегантность и практичность во всём.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Оставьте отзыв о нашей работе</h2>
+            <form class="contact-form" id="contactForm">
+				<input type="text" id="NameInput" placeholder="Ваше имя" required>
+				<input type="email" id="EmailInput" placeholder="Ваш e-mail" required>
+				<textarea placeholder="Ваш отзыв" id="FeedbackInput" required></textarea>
+				<p id="emailErrorMessage" style="color: red; font-size: 14px; display: none;">Моя ошибка</p>
+				<button type="submit" class="btn-primary">Отправить</button>
+			</form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FurniStyle.</p>
+        </div>
+    </footer>
+    <script src="main-script.js"></script>
+</body>
+</html>

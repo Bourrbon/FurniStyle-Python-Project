@@ -1,0 +1,495 @@
+@font-face { 
+	font-family: "SF-Pro"; 
+	src: url("main/SF-Pro.ttf");
+}
+
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF-Pro';
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+	margin-left: 3%;
+	text-decoration: none;
+	color: inherit;
+}
+
+.header .logo:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav a {
+    margin-left: 20px;
+	margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+	font-weight: 600;
+}
+
+/* Base styling for the button */
+.btn-cart {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the button */
+    padding: 10px 20px;
+	margin-right: 20px;
+    border: 2px solid black;
+	border-radius: 30px;
+    background-color: transparent;
+    color: black;
+    font-family: 'SF-Pro';
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Styling for the button hover state */
+.btn-cart:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* Styling for the image inside the button */
+.btn-cart img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Styling for the text inside the button */
+.btn-cart p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn-catalogue {
+    position: relative;
+    padding: 10px 20px;
+    border: 2px solid black;
+	border-radius: 30px;
+    background: rgba(256, 256, 256, 1.0);
+    color: black;
+    font-family: 'SF-Pro';
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	text-decoration: none;
+}
+
+/* Styling for the button hover state */
+.btn-catalogue:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* Styling for the text inside the button */
+.btn-add-to-cart p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn-add-to-cart {
+    position: relative; /* Ensures the pseudo-element is positioned relative to the button */
+
+    padding: 10px 20px;
+    border: 2px solid black;
+	border-radius: 30px;
+    background-color: transparent;
+    color: black;
+    font-family: 'SF-Pro';
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Styling for the button hover state */
+.btn-add-to-cart:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url("main/back2.jpg") no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+	font-family: 'Arial', sans-serif;
+	background-color: #ffffff;
+}
+
+.hero .hero-content {
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+	font-size: 3em;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: solid white;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+	font-family: 'SF-Pro';
+}
+
+.hero .btn-primary {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+	font-family: 'SF-Pro';
+
+}
+
+.hero-content p {
+	
+	font-weight: bald;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #f9f9f9;
+	font-weight: bald;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+	font-weight: regular;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+	justify-content: center;
+    gap: 20px;
+    
+}
+
+.product {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.product-info {
+	margin-top: auto;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+	width: 256px;
+	display: block;
+	margin: auto;
+}
+
+.product .product-info h3 {
+    margin-bottom: 10px;
+}
+
+.product .product-info p {
+    font-weight: bold;
+    margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+.btn-add {
+    background: #28a745;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font-family: 'SF-Pro';
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: #f1f1f1;
+	font-family: 'SF-Pro';
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+	font-family: 'SF-Pro';
+	text-align: left;
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font-size: 0.8em;
+}
+
+.contact-form button:hover {
+	background: #268fff;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* --------------------------------------------------------------------------- */
+/* about page styles */
+
+.description {
+	margin: 20px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* cart page styles */
+
+.cart-content {
+    background: #fff;
+	margin-top: 20px;
+    padding: 20px;
+    
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.cart-content .cart-items {
+    background: #fff;
+	margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.cart-content .cart-items p {
+	margin-bottom: 20px;
+	font-weight: 700;
+
+}
+
+.cart-content .cart-item {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: center;
+	flex-direction: row;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.product-img {
+	max-width: 128px;
+	width: auto;
+	
+	max-height: 128px;
+	height: auto;
+	
+	margin-right: 20px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.product-description {
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	margin: auto;
+}
+
+.cart-content .payment-info {
+    background: #fff;
+	height: 50%;
+	margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.payment-info-block {
+	/* border: 1px solid #ddd; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.payment-info-block p {
+	font-weight: 750;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/* quanity selector */
+.quantity-selector-field {
+	margin: 0;
+	padding: 0;
+	max-height: 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	vertical-align: center;
+
+}
+
+.quantity-selector-field .quantity-price {
+	text-align: center;
+	padding: 10px;
+}
+
+h3 {
+  display: block;
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.product-quantity {
+  width: 10rem;
+  display: block;
+}
+
+input {
+  
+  width: 50px;
+  margin: 0;
+  padding: 0.75rem 0;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+
+}
+
+.quantity-selectors-container {
+  vertical-align: center;
+}
+
+.quantity-selectors {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 10;
+  gap: 10px;
+}
+
+.quantity-selectors button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: #fff;
+  color: grey;
+}
+
+.quantity-selectors button:first-child {
+ 
+}
+
+.quantity-selectors button:hover {
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+.quantity-selectors button[disabled="disabled"] {
+  cursor: not-allowed;
+}
+
+.quantity-selectors button[disabled="disabled"] span {
+  opacity: 0.5;
+}
+

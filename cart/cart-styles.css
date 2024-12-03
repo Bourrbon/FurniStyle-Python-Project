@@ -1,0 +1,41 @@
+@font-face { 
+	font-family: "SF-Pro"; 
+	src: url("../main/SF-Pro.ttf");
+}
+
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'SF-Pro';
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+	font-family: 'SF-Pro';
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+	margin-left: 3%;
+}
+.nav a {
+    margin-left: 20px;
+	margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}

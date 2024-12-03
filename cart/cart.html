@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../main-styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="shopcart.png" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">FurniStyle</a>
+            <nav class="nav">
+                <a href="../about-page/about.html">О нас</a>
+                <a href="#products">Каталог</a>
+                <a href="#contact">Контакты</a>
+                <button class="btn-cart" onclick='location.href="cart.html"'>
+					<p>Корзина</p>
+				</button>
+            </nav>
+        </div>
+    </header>
+	
+	<section id="cart-content">
+		<div class="cart-content">
+			<div class="cart-items">
+				<p>Ваши товары</p>
+				
+				<div class="cart-item">
+					<img class="product-img" src="../main/sofa.jpg">
+					<div class="product-description">Диван домашний (белый)</div>
+					<div class="quantity-selector-field">
+						  <div class="quantity-selectors">
+							<button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
+							<input data-min="1" data-max="10" type="text" name="quantity" value="1" readonly="true">
+							<button type="button" class="increment-quantity" aria-label="Add one" data-direction="1"><span>&#43;</span></button>
+						  </div>
+						<div class="quantity-price">9999 ₽</div>
+					</div>
+				</div>
+				
+				<div class="cart-item">
+					<img class="product-img" src="../main/chair.jpg">
+					<div class="product-description">Стул дизайнерский (белый)</div>
+					<div class="quantity-selector-field">
+						  <div class="quantity-selectors">
+							<button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
+							<input data-min="1" data-max="10" type="text" name="quantity" value="1" readonly="true">
+							<button type="button" class="increment-quantity" aria-label="Add one" data-direction="1"><span>&#43;</span></button>
+						  </div>
+						<div class="quantity-price">4999 ₽</div>
+					</div>
+				</div>
+				
+				<div class="cart-item">
+					<img class="product-img" src="../main/table.webp">
+					<div class="product-description">Стол обеденный (орех)</div>
+					<div class="quantity-selector-field">
+						  <div class="quantity-selectors">
+							<button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
+							<input data-min="1" data-max="10" type="text" name="quantity" value="1" readonly="true">
+							<button type="button" class="increment-quantity" aria-label="Add one" data-direction="1"><span>&#43;</span></button>
+						  </div>
+						<div class="quantity-price">8999 ₽</div>
+					</div>
+				</div>	
+				
+			</div>
+
+			<div class="payment-info">
+				<div class="payment-info-block">
+					<button class="btn-add-to-cart">Перейти к оплате</button>
+				</div>
+				<div class="payment-info-block">
+					<div class="num-of-products">Товары (3): </div>
+					<p class="final-price">23 997 ₽ </p>
+				</div>
+				<div class="payment-info-block">
+					<div class="pers-discount-text">Ваша персональная скидка: </div>
+					<p class="personal-discount">3500 ₽</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FurniStyle.</p>
+        </div>
+    </footer>
+	
+	<script src="main-script.js"></script>
+</body>
+</html>
